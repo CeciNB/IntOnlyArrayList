@@ -5,6 +5,12 @@ public class IntOnlyArrayList {
 
     public IntOnlyArrayList(){}
 
+    public IntOnlyArrayList(int[] numbers){
+        for(int i : numbers){
+            this.add(i);
+        }
+    }
+
     public int get(int index){
         return intArray[index];
     }
